@@ -110,9 +110,7 @@ public class BanPlugin extends JavaPlugin
 
 	        } catch (IOException e)
         	{
-
 	        	e.printStackTrace();
-
 	        }
 	}
 }
