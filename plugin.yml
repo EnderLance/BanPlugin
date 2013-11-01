@@ -1,0 +1,8 @@
+name: BanPlugin
+main: ca.enderlance.banplugin.BanPlugin
+description: The custom banning plugin for Amestria.
+version: 0.2
+commands:
+  ban:
+    description: Bans/Unbans a player (Must specify a reason)
+
