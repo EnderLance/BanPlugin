@@ -41,13 +41,13 @@ public class BanPlugin extends JavaPlugin
 						if(toplayer.isBanned())
 						{
 							ban(toplayer);
-							player.sendMessage(ChatColor.GOLD.ITALIC + "You have pardoned " + toplayer.getName() + " for " + args[1]);
+							player.sendMessage(ChatColor.GOLD + "You have pardoned " + toplayer.getName() + " for " + args[1]);
 							logToFile(sender.getName() + "	has changed the ban status of	" + toplayer.getName() + "	to	" + toplayer.isBanned() + "	for	" + args[1]);
 						}
 						else if(!(toplayer.isBanned()))
 						{
 							ban(toplayer);
-							player.sendMessage(ChatColor.GOLD.ITALIC + "You have banned " + toplayer.getName() + " for " + args[1]);
+							player.sendMessage(ChatColor.GOLD + "You have banned " + toplayer.getName() + " for " + args[1]);
 							logToFile(sender.getName() + "	has changed the ban status of	" + toplayer.getName() + "	to	" + toplayer.isBanned() + "	for	" + args[1]);
 						}
 					}
