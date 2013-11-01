@@ -85,23 +85,20 @@ public class BanPlugin extends JavaPlugin
 	//Method below from https://forums.bukkit.org/threads/making-a-log-file-for-your-plugins.85430/
 	
 	public void logToFile(String message)
-		 
     {
- 
         try
         {
-            File dataFolder = getDataFolder();
-            if(!dataFolder.exists())
+        	File dataFolder = getDataFolder();
+        	if(!dataFolder.exists())
             {
                 dataFolder.mkdir();
             }
-             File saveTo = new File(getDataFolder(), "banLog.txt");
-             if (!saveTo.exists())
+            File saveTo = new File(getDataFolder(), "banLog.txt");
+            if (!saveTo.exists())
             {
-                saveTo.createNewFile();
+            	saveTo.createNewFile();
             }
 
- 
             FileWriter fw = new FileWriter(saveTo, true);
  
             PrintWriter pw = new PrintWriter(fw);
@@ -115,9 +112,8 @@ public class BanPlugin extends JavaPlugin
         } catch (IOException e)
         {
  
-            e.printStackTrace();
+        	e.printStackTrace();
  
         }
- 
-    }
+	}
 }
